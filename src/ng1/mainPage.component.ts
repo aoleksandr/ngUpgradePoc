@@ -1,7 +1,5 @@
 import template from './mainPage.tpl.html';
 
-console.log(template);
-
 import { MainService } from './main.service';
 
 export class MainPageComponent implements ng.IComponentOptions {
