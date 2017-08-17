@@ -1,0 +1,26 @@
+{
+  "env": {
+    "production": {
+      "plugins": [
+        "angularjs-annotate"
+      ],
+      "presets": [
+        [
+          "env",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ]
+    }
+  },
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "loose": true
+      }
+    ]
+  ]
+}

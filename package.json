@@ -1,0 +1,39 @@
+{
+  "name": "ng-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --config webpack.config.js --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aoleksandr",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^4.3.4",
+    "@angular/compiler": "^4.3.4",
+    "@angular/core": "^4.3.4",
+    "@angular/platform-browser": "^4.3.4",
+    "@angular/platform-browser-dynamic": "^4.3.4",
+    "@angular/upgrade": "^4.3.4",
+    "@types/angular": "1.6.28",
+    "@types/angularjs": "^1.5.14-alpha",
+    "angular": "^1.6.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-latest": "^6.24.1",
+    "definitely-typed-angular": "^1.0.1",
+    "definitely-typed-jquery": "^1.0.0",
+    "html-loader": "^0.5.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "ts-loader": "^2.3.2",
+    "typescript": "^2.4.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
+    "zone.js": "^0.8.16"
+  }
+}
