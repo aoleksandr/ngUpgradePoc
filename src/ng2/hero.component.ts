@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 
+import template from './hero.tpl.html';
+
 @Component({
   selector: 'hero',
-  template: 'Fancy shiny angular(4) component',
+  template,
 })
 export class HeroComponent {}

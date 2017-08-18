@@ -17,9 +17,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
-    alias: {
-      '@angular/upgrade/static': '@angular/upgrade/bundles/upgrade-static.umd.js'
-    }
   },
   module: {
     rules: [{
