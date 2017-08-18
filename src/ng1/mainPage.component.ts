@@ -17,4 +17,8 @@ class MainPageController implements ng.IComponentController {
   onClicked(): void {
     console.log('clicked');
   }
+
+  onDelete($event) {
+    console.log('deleted', $event);
+  }
 }

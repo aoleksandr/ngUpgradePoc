@@ -6,4 +6,6 @@
 
 <a href="" ng-click="$ctrl.onClicked()">click</a>
 <hr/>
-<hero></hero>
+<hero [hero]="'test'"
+      (deleted)="$ctrl.onDelete($event)">
+</hero>

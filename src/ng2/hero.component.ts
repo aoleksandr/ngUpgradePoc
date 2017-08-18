@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import template from './hero.tpl.html';
 
@@ -6,4 +6,11 @@ import template from './hero.tpl.html';
   selector: 'hero',
   template,
 })
-export class HeroComponent {}
+export class HeroComponent {
+  @Input() hero: string;
+  @Output() deleted = new EventEmitter<string>();
+
+  onDelete() {
+    this.deleted.emit(this.hero);
+  }
+}
