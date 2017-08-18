@@ -1,5 +1,5 @@
 {
-  "name": "ngUpgradePoc",
+  "name": "ngupgradepoc",
   "version": "1.0.0",
   "description": "POC for angular 1->4 migration",
   "main": "index.js",
