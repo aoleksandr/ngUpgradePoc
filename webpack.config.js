@@ -47,7 +47,15 @@ module.exports = {
       ],
     }],
   },
+  plugins: [
+    // fix for https://github.com/angular/angular/issues/11580
+    new webpack.ContextReplacementPlugin(
+      /angular(\\|\/)core(\\|\/)@angular/,
+      path.resolve(__dirname, '../src')
+    ),
+  ],
   devServer: {
+    historyApiFallback: true,
     contentBase: './src',
     inline: true,
     overlay: {

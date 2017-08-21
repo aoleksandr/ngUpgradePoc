@@ -1,11 +1,10 @@
-<h1>Main Page</h1>
+<h4>Main Page (angularjs)</h4>
 
 <ul>
   <li ng-repeat="item in $ctrl.items">{{item}}</li>
 </ul>
 
 <a href="" ng-click="$ctrl.onClicked()">click</a>
-<hr/>
 <hero [hero]="'test'"
       (deleted)="$ctrl.onDelete($event)">
 </hero>

@@ -5,6 +5,7 @@ import 'zone.js';
 
 import { UpgradeModule } from '@angular/upgrade/static';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { UIRouter, UrlService } from '@uirouter/core';
 
 import './ng1/ng1.module'
 import { ng2Module } from './ng2/ng2.module'
@@ -14,4 +15,9 @@ platformBrowserDynamic().bootstrapModule(ng2Module).then((platformRef) => {
   const upgrade = injector.get(UpgradeModule) as UpgradeModule;
 
   upgrade.bootstrap(document.body, ['ng1']);
+
+  const url: UrlService = injector.get(UIRouter).urlService;
+
+  url.listen();
+  url.sync();
 })
