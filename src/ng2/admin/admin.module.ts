@@ -4,14 +4,17 @@ import { UIRouterModule } from '@uirouter/angular';
 
 import { adminRoutes } from './admin.route';
 
-import { AdminComponent } from './admin.component';
+import { SharedModule } from '../shared/shared.module';
+
+import { AdminComponent } from './adminPage.component';
 
 @NgModule({
   imports: [
-    UIRouterModule.forChild({ states: adminRoutes })
+    UIRouterModule.forChild({ states: adminRoutes }),
+    SharedModule
   ],
   declarations: [
-    AdminComponent
+    AdminComponent,
   ]
 })
 

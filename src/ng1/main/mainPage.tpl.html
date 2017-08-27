@@ -1,0 +1,13 @@
+<h4>Main Page (angularjs)</h4>
+<p>Items from ng1 service: <i>{{$ctrl.items.join(', ')}}</i></p>
+
+<br/>
+<hero
+  [placement]="'main page'"
+  (btn-handler)="$ctrl.onHeroClick($event)">
+</hero>
+<br/>
+<villain
+  placement="'main page'"
+  btn-handler="$ctrl.onVillainClick">
+</villain>

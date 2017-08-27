@@ -1,0 +1,17 @@
+<h4>Admin Page (angular)</h4>
+
+<p>User name: {{userName}}</p>
+
+<br />
+
+<hero
+  [placement]="'admin page'"
+  (btnHandler)="onHeroClick($event)">
+</hero>
+
+<br/>
+
+<villain
+  [placement]="'admin page'"
+  [btnHandler]="onVillainClick">
+</villain>

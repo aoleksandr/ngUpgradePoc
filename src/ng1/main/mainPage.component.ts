@@ -14,11 +14,11 @@ class MainPageController implements ng.IComponentController {
     this.items = mainService.getItems();
   }
 
-  onClicked(): void {
-    console.log('clicked');
+  onHeroClick($event) {
+    console.log($event);
   }
 
-  onDelete($event) {
-    console.log('deleted', $event);
+  onVillainClick(str) {
+    console.log(str);
   }
 }

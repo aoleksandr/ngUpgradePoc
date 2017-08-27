@@ -6,8 +6,7 @@ import { UIRouterModule } from '@uirouter/angular';
 import { UIRouterUpgradeModule } from '@uirouter/angular-hybrid';
 
 import { AdminModule } from './admin/admin.module';
-
-import { HeroComponent } from './hero.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   imports: [
@@ -15,16 +14,12 @@ import { HeroComponent } from './hero.component';
     UpgradeModule,
     UIRouterUpgradeModule,
     UIRouterModule,
-    AdminModule
+    AdminModule,
+    SharedModule,
   ],
   declarations: [
-    HeroComponent
-  ],
-  entryComponents: [
-    HeroComponent
   ]
 })
-
 export class ng2Module {
   ngDoBootstrap() {}
 }

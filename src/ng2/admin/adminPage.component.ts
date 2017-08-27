@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import template from './admin.tpl.html';
+import template from './adminPage.tpl.html';
 
 @Component({
   selector: 'admin',
@@ -8,4 +8,12 @@ import template from './admin.tpl.html';
 })
 export class AdminComponent{
   public userName:string = 'John Doe';
+
+  onHeroClick($event) {
+    console.log($event);
+  }
+
+  onVillainClick(str) {
+    console.log(str);
+  }
 }

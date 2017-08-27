@@ -7,10 +7,10 @@ import template from './hero.tpl.html';
   template,
 })
 export class HeroComponent {
-  @Input() hero: string;
-  @Output() deleted = new EventEmitter<string>();
+  @Input() placement: string;
+  @Output() btnHandler = new EventEmitter<string>();
 
-  onDelete() {
-    this.deleted.emit(this.hero);
+  onBtnClick() {
+    this.btnHandler.emit(`button clicked from ${this.placement}`);
   }
 }
