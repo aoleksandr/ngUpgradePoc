@@ -5,6 +5,8 @@ import { UpgradeModule } from '@angular/upgrade/static';
 import { HeroComponent } from './hero.component';
 import { VillainDirective } from './villain.component';
 
+import { mainServiceProvider } from './ng1-upgraded-providers';
+
 @NgModule({
   imports: [
     UpgradeModule,
@@ -19,6 +21,9 @@ import { VillainDirective } from './villain.component';
   ],
   entryComponents: [
     HeroComponent
+  ],
+  providers: [
+    mainServiceProvider
   ]
 })
 

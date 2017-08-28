@@ -6,7 +6,7 @@ import { UpgradeComponent } from '@angular/upgrade/static';
 })
 export class VillainDirective extends UpgradeComponent {
   @Input() placement: string;
-  @Input() btnHandler: any;
+  @Input() btnHandler: Function;
 
   constructor(@Inject(ElementRef) elementRef: ElementRef, @Inject(Injector) injector: Injector) {
     super('villain', elementRef, injector);

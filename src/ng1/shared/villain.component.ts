@@ -11,7 +11,7 @@ class VillainComponent implements ng.IComponentOptions {
 
 class VillainController implements ng.IComponentController {
   placement:string;
-  btnHandler:any; // todo: find a good way of doing this
+  btnHandler:Function;
 
   constructor() {
   }
